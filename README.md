@@ -29,15 +29,21 @@ It wrote the code, ran away, and now the game is unplayable.
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 
+Answer: - guess the right now in 8 attempts
+        - the hint logic was oppsite
+        - the count for attemps was not correct
+        - fix the hint logic by reversing the old logic
+        - refactor the show_attempts_left. 
+
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns "Too Low"
+3. User enters a guess of 75, and the game shows "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

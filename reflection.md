@@ -8,16 +8,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+Answer: The hints were backwards
+        'New Game' button is not working
+
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
-
+|'new game'| new game begin | nothing happend | still in the same page|
+|attempts | attempts should change| attempts not count/record right |attempts not showing correct |
+|input a number|give the correct hint | hint are oppsite | hints are backward |
+| check 'show hint'| hint should shows| nothing happend| hint not showing correctly
+|after guess the right number | score added | score not added right | score part not right
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -35,12 +39,16 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+Answer: - Claude
+        - both manual and pytest for check_guess function 
+        - AI helped write and run the pytest, also show the results
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Answer: Streamlit reruns the script from top to bottom on every interaction, and st.session_state is what lets you keep data between those reruns.
 ---
 
 ## 5. Looking ahead: your developer habits
